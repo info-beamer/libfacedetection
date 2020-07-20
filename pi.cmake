@@ -1,0 +1,8 @@
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_VERSION 1)
+set(CMAKE_SYSTEM_PROCESSOR "armv7l")
+set(CMAKE_CXX_COMPILER "arm-linux-gnueabihf-g++")
+set(CMAKE_C_COMPILER "arm-linux-gnueabihf-gcc")
+set(COMPILER_FLAGS "-mcpu=cortex-a7 -mfloat-abi=hard -mfpu=neon-vfpv4")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${COMPILER_FLAGS}" CACHE STRING "" FORCE)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${COMPILER_FLAGS}" CACHE STRING "" FORCE)
